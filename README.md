@@ -6,15 +6,19 @@ Joker is a simple REST API that returns jokes of different kinds.
 ## API Routes
 
 **Get Jokes** - Returns a random joke
+
 `GET - https://iaeufj7svc.execute-api.us-east-1.amazonaws.com/dev/joke`
 
 **Get Pickup Line** - Returns a random pickup line
+
 `GET - https://iaeufj7svc.execute-api.us-east-1.amazonaws.com/dev/pickupLine`
 
 **Get Insult** - Returns a random insult
+
 `GET - https://iaeufj7svc.execute-api.us-east-1.amazonaws.com/dev/insult`
 
 **Example Responses** 
+
 Jokes: `{"type":"joke","content":"A foo walks into a bar, takes a look around and says... Hello, World!"}`
 
 Pickup Line: `{"type":"pickupLine","content":"Are you a magician? Because whenever I look at you, everyone else disappears!"}`
