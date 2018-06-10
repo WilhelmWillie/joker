@@ -1,0 +1,25 @@
+service: joker
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  jokes:
+    handler: handler.getJoke
+    events:
+      - http:
+          path: joke/
+          method: get
+  pickupLines:
+    handler: handler.getPickupLine
+    events:
+      - http:
+          path: pickupLine/
+          method: get
+  insult:
+    handler: handler.getInsult
+    events:
+      - http:
+          path: insult/
+          method: get
